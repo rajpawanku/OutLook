@@ -1,0 +1,81 @@
+#footer{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: 
+    #212020;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5,17.2%);
+}  
+.footersec{
+     margin-top: 15px;
+     margin-left: 10px;
+     margin-right: 10px;
+     height:328px;
+     /* border: 1px solid red;  */
+}
+.footerheading{
+    text-decoration: underline; 
+    margin-left: 14.5%;
+    color: white;
+   
+}
+ul{
+    list-style-type: none;
+}
+li{
+    line-height: 30px;
+}
+.A{
+    text-decoration: none;
+    color: #b1aeae;
+    background-color: transparent;
+    font: 13px "Open Sans", sans-serif; 
+   
+    
+}
+.aa{
+    margin-top: 10px;
+    
+}
+li>a{
+    text-decoration: none;
+    color: #b1aeae;
+    font: 13px "Open Sans", sans-serif;
+}
+.footer_socail{
+    margin-left: 30px;
+}
+.footer_socail1{
+margin-left: 48px;
+}
+.footer_socail2{
+    margin-left: 42px;
+}
+
+#last_div{
+   
+    margin-top: 0px;
+    height: 45px;
+    /* border: 1px solid teal; */
+    background-color: #181818;
+    width: 100%;
+}
+.last_div_text{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 25px;
+    color: #969595;
+    font: 13px "Open Sans", sans-serif;
+
+}
+#ldt{
+    margin-left: 45px;
+}
+#outlookdigital{
+display: inline-block;
+margin-left: 32%;
+color: #d3d2d2;
+font-size: 16px;
+}
