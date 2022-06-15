@@ -14,7 +14,7 @@
     text-align: center;
    
 }
-#mobile,#password{
+#mobile,#password,#name{
     display: block;
     padding: 18px 195px;  
     margin: 20px 0px 10px;
@@ -38,5 +38,8 @@
 }
 a{
     text-decoration: underline;
+    color: red;
+}
+ button:hover{
     color: red;
 }

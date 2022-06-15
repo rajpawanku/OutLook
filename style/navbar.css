@@ -1,0 +1,94 @@
+#navmain{
+    height: 95px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex; 
+ }
+ 
+ #outlook{
+     height: 80px;
+     width:20%;
+     margin-top: 1%;
+     /* border: 1px solid black; */
+     margin-left: 40%; 
+ }
+ #socailimg_div{
+     height: 30px;
+     width: 10%;
+     margin-top: 1%;
+     /* border: 1px solid red; */
+      margin-left: 25%; 
+      
+ }
+ #outimgmain{
+     margin-left: 15%;
+     margin-top: 5%;
+ }
+ #loginlink{
+     text-decoration: none;
+     margin-left: 27%;
+     color: #4f4d4d;
+     font: 13px "Open Sans", sans-serif;
+ }
+ span{
+     font:13px "Open Sans", sans-serif;
+     color: #4f4d4d;
+     margin-left: 3%;
+ }
+ .socailimg{
+     height: 20px;
+     margin-left: 5%;
+     margin-top: 3%;
+ }
+
+
+ /*  input sryple */
+
+ .icon{
+    color: #21DFCD;
+    float: right;
+    width: 40px;
+    font-size: 1.3rem;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.search-box{
+    position: absolute;
+    /* /* margin-top:1% ; */
+    margin-left: 80%; 
+    transform: translate(-50%,30%);
+    background: #2C3441;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover > input{
+    width: 200px;
+    padding: 0px 10px;
+}
+.search-box:hover >.icon{
+    background: #536179;
+}
+.icon:hover{
+    transform: rotate(360deg)
+    transition(0.8);
+}
+input{
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+    line-height: 40px;
+    color: #fff;
+    
+}
