@@ -172,6 +172,7 @@ hr{
     margin-top: 7px;
 }
 
-/* .CRYPTO_CORNER_grid h3:hover,.CULTURE_AND_SOCIETY H3:hover{
-    columns: red;
-} */
+.CRYPTO_CORNER_grid h3:hover,.CULTURE_AND_SOCIETY h3:hover,
+.WORLDNEWS h3:hover,.sports h3:hover{
+    color: red;
+} 

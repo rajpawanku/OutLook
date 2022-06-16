@@ -3,17 +3,24 @@ let x =` <div id="navmain">
 <p id="date"></p>
 
 <div id="outlook">
- <img id="outimgmain" src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt="">
+<a href="index.html">
+<img id="outimgmain" src="https://www.outlookindia.com/images/home_new_v4/logo_outlook.svg" alt=""></a>
+
  <span><a id="loginlink" href="login.html">LOGIN</a></span> 
  <span>SUBSCRIBE</span>
 </div>
 
 <div id="socailimg_div">
+<a href="https://www.facebook.com/Outlookindia" target="_blank"> <img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="" class="socailimg">
+</a>
+<a href="https://www.facebook.com/Outlookindia" target="_blank">
+<img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="" class="socailimg"> </a>
+<a href="https://www.facebook.com/Outlookindia" target="_blank"> <img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="" class="socailimg"> </a>
+<a href="https://www.facebook.com/Outlookindia" target="_blank"> <img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="" class="socailimg"></a>
+ 
+ 
 
- <img src="https://www.outlookindia.com/images/home_new_v4/facebook_top.svg" alt="" class="socailimg">
- <img src="https://www.outlookindia.com/images/home_new_v4/twitter_top.svg" alt="" class="socailimg">
- <img src="https://www.outlookindia.com/images/home_new_v4/instagram_top.svg" alt="" class="socailimg">
-<img src="https://www.outlookindia.com/images/home_new_v4/youtube_top.svg" alt="" class="socailimg">
+
 
 </div>
 </div>
@@ -21,7 +28,7 @@ let x =` <div id="navmain">
 <div id="hover">
 
  <div class="dropdown1" id="homebtn">
-     <button class="dropbtn1" ><a href="">HOME</a></button>
+     <button class="dropbtn1" ><a href="index.html">HOME</a></button>
  </div>
 
 <!-- 2 -->
@@ -43,7 +50,7 @@ let x =` <div id="navmain">
 
 <!-- 3 -->
  <div class="dropdown1">
-     <button class="dropbtn1" id="business"><a href="">BUSINESS</a></button>
+     <button class="dropbtn1" id="business"><a href="business.html">BUSINESS</a></button>
      <div class="dropdown-content1" id="dropdown-content1-business">
          <table>
              <tr>
@@ -64,17 +71,17 @@ let x =` <div id="navmain">
 
  <!-- 4 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">MONEY</a></button>
+     <button class="dropbtn1"><a href="money.html">MONEY</a></button>
  </div>
 
  <!-- 5 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">CRYPTO CORNER</a></button>
+     <button class="dropbtn1"><a href="crypto.html">CRYPTO CORNER</a></button>
  </div>
 
  <!-- 6 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">TRAVEL</a></button>
+     <button class="dropbtn1"><a href="travel.html">TRAVEL</a></button>
      <div class="dropdown-content1" id="dropdown-content1-travel">
          <table>
 <!--  See Stay Experience Travel News Videos Responsible Tourism OT Quiz Guide Books -->
@@ -95,7 +102,7 @@ let x =` <div id="navmain">
 
  <!-- 7 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">SPORTS</a></button>
+     <button class="dropbtn1"><a href="sports.html">SPORTS</a></button>
  </div>
 
  <!-- 8 -->
@@ -105,12 +112,12 @@ let x =` <div id="navmain">
 
  <!-- 9 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">ENTERTAINMENT</a></button>
+     <button class="dropbtn1"><a href="enterment.html">ENTERTAINMENT</a></button>
  </div>
 
  <!-- 10 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">PHOTOS</a></button>
+     <button class="dropbtn1"><a href="photo.html">PHOTOS</a></button>
  </div>
 
  <!-- 11 -->

@@ -11,12 +11,10 @@ import {fooTer} from "../components/footer.js"
 let f = document.getElementById("footermaindiv")
 f.innerHTML = fooTer()
 
-// let input = document.getElementById("query")
-// if(input =="ENTER"){
-//   window.location.href="search.html"
-// }
+let cartdata = JSON.parse(localStorage.getItem('coffee')) || []
 
-let api = "1f46a7379e934737ab1131d6fbc866f5"
+//let oldapi = "1f46a7379e934737ab1131d6fbc866f5"
+let api = "c321f987cbcf4c3a82ac11664fd859dd"
 let bitcoinsearch = async () => {
   //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
   let res = await fetch(
@@ -36,6 +34,7 @@ let append = (data) => {
   container.innerHTML = null;
   data.forEach((el) => {
     
+
     let heading = document.createElement("div")
     heading.setAttribute("class","CRYPTO_CORNER_grid")
     
@@ -47,6 +46,10 @@ let append = (data) => {
     let h3 = document.createElement("h3");
     h3.innerText = el.title;
     h3.style.textAlign="center"
+    h3.setAttribute("class","h3")
+    h3.addEventListener('click',function(){
+      addtocart(el)
+    })
 
 
     let p = document.createElement("p")
@@ -57,14 +60,22 @@ let append = (data) => {
     heading.append(img,h3,p,)
     container.append( heading);
   });
+  function addtocart(el){
+    console.log(el)
+    cartdata.push(el)
+    localStorage.setItem('coffee',JSON.stringify(cartdata));
+    window.location.href="fullnews.html"
+    
+}
 };
 
 
 // Culture append
+let api1 ="fbdb02c3b8454a85a64cbca2d9e3e00c"
 let culturesearch = async () => {
   //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
   let res = await fetch(
-    `https://newsapi.org/v2/everything?q=culture&pageSize=8&apiKey=${api}`
+    `https://newsapi.org/v2/everything?q=culture&pageSize=8&apiKey=${api1}`
   );
   
   let data = await res.json();
@@ -103,10 +114,11 @@ let appendculture = (data) => {
 
 
 // World News
+let api2="d4d1945391e24bf38d666de99aba70af"
 let worldsearch = async () => {
   //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
   let res = await fetch(
-    `https://newsapi.org/v2/everything?q=world&pageSize=8&apiKey=${api}`
+    `https://newsapi.org/v2/everything?q=world&pageSize=8&apiKey=${api2}`
   );
   
   let data = await res.json();

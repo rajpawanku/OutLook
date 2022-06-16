@@ -8,15 +8,15 @@ let f = document.getElementById("footermaindiv")
 f.innerHTML = fooTer()
 
 // changing krna hai
- let categories = document.getElementById("hover").children;
+//  let categories = document.getElementById("hover").children;
   
-for (let el of categories) {
-  el.addEventListener("click", hello);
-}
+// for (let el of categories) {
+//   el.addEventListener("click", hello);
+// }
 
-function hello() {
-    searchImages(this.id);
-  }
+// function hello() {
+//     searchImages(this.id);
+//   }
      
   let search = (e) => {
     if (e.key === "Enter") {
@@ -26,13 +26,17 @@ function hello() {
   
   document.getElementById("query").addEventListener("keydown", search);
   
-  const api = "1f46a7379e934737ab1131d6fbc866f5"
+  //const oldapi = "1f46a7379e934737ab1131d6fbc866f5"
+  const api ="75a494b06688473f8c49b997fcc756d5"
   
+  let cartdata = JSON.parse(localStorage.getItem('coffee')) || []
+
   let searchImages = async (q) => {
     let query = document.getElementById("query").value;
     if (q) {
       query = q;
     }
+    //
     //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
     let res = await fetch(
       `https://newsapi.org/v2/everything?q=${query}&pageSize=30&apiKey=${api}`
@@ -51,6 +55,7 @@ function hello() {
       
       let heading = document.createElement("div")
       heading.setAttribute("class","search_div_grid")
+     
       
       let img = document.createElement("img");
       img.src = el.urlToImage;
@@ -59,6 +64,9 @@ function hello() {
       let h3 = document.createElement("h3");
       h3.innerText = el.title;
       h3.setAttribute("id","h3")
+      h3.addEventListener('click',function(){
+        addtocart(el)
+      })
     //   h3.style.textAlign="center"
   
        let p = document.createElement("p")
@@ -69,6 +77,13 @@ function hello() {
       heading.append(img,h3,p,)
       container.append( heading);
     });
+    function addtocart(el){
+      console.log(el)
+      cartdata.push(el)
+      localStorage.setItem('coffee',JSON.stringify(cartdata));
+      window.location.href="fullnews.html"
+      
+  }
   };
 
 
