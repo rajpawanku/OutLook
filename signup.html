@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link rel="stylesheet" href="/style/login.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/hover.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+   <link rel="stylesheet" href="/style/footer.css">
+   <style>
+     #footermaindiv{
+        margin-top: 5%;
+    }
+   </style>
 </head>
 <body>
-    <form action="">
+    <div id="sbsbemaindiv"></div>
+    
          <div id="container" style="height: 450px;">
         <h2 id="h2"> SIGNUP IN TO OUTLOOK</h2>
+
+        <form action="" id="form">
         <input type="text" id="name" placeholder="Enter Your Name">
         <input type="number" maxlength="11" id="mobile" placeholder="Mobile Number" />
         <input type="password" id="password" placeholder="Password" />
-        <button onclick="signup()" id="btn" style="font-size:16px; padding: 16px 240px;">SIGNUP IN</button>
-        <p id="p">If you are a subscriber ? <a href="login.html">Sign In</a> </p>
-    </div>
+   
+
+        <input type="submit" id="btn" style="font-size:16px; padding: 16px 253px;"></input>
     </form>
+        <p id="p">If you are a subscriber ? <a class="aa" href="login.html">Sign In</a> </p>
+    </div>
+  
+    <div id="footermaindiv"></div>
     
 </body>
 </html>
+<script type="module" src="/scripts/signup.js"></script>

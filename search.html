@@ -5,122 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/hover.css">
+   <link rel="stylesheet" href="/style/navbar.css">
+   <link rel="stylesheet" href="/style/footer.css">
     <style>
         #search_div{
             display: grid;
             width: 65%;
-            margin-left: 6%;
-            grid-template-rows: repeat(1,100%);
-            border: 1px solid red;
+            margin-left: 16.5%;
+            grid-template-rows: repeat(1,1fr);
+             /* border: 1px solid red;  */
         }
         #search_div > div{
-            gap: 20px;
-            border: 1px solid teal;
+          /* width: 80%; */
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+           rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+           border-radius: 15px;
+          margin-top: 2%;
+          height: 150px;
         }
+       
+#image{
+  height: 150px;
+  width: 160px;
+  display: inline-block; 
+}
+#h3{
+  /* text-align: center; */
+  margin-left: 165px;
+  margin-top: -15%;
+}
+.P{
+  justify-content: center;
+  margin-left: 165px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.search_div_grid h3:hover{
+  color: red;
+}
+/* #search_ke_bagalme{
+  display: grid;
+  width: 25%;
+  position: absolute;
+ margin-left: 72%;
+   /* margin-top: -1.3%;   
+ grid-template-rows: repeat(1,1fr);
+  
+} 
+/* #search_ke_bagalme > div {
+  position: absolute;
+      border: 1px solid red; 
+          margin-top: 1%;
+          height: 150px;
+          
+} 
+#most{
+  margin-top: -10%;
+  margin-left: 72%;
+  position: absolute;
+}
+hr{
+    width: 24.7%;
+    margin-left: 72%;
+    border-color: red;
+    margin-top: -1%;
+}
 
+
+.search_ke_bagalme_img{
+  height: 150px;
+  width: 150px;
+}
+.search_ke_bagalme_h3{
+  margin-left: 150px;
+text-align: justify;
+}
+*/
+#footermaindiv{
+  margin-top: 12%;
+}
     </style>
 </head>
 <body>
-    <input type="text" id="query">
+  <div id="sbsbemaindiv"></div>
+
     <div id="search_div">
-  <div id="search_div_grid"></div>
+  <!-- <div id="search_div_grid"></div> -->
     </div>
+
+
+    <!-- <h2 id="most">MOST POPULAR</h2>
+    <hr>
+    <div id="search_ke_bagalme">
+      <div class="search_ke_bagalme_grid"></div>
+    </div> -->
+
+
+    <!-- Footer Append -->
+    <div id="footermaindiv"></div>
 </body>
 </html>
-<script>
-
-    
-
-// changing krna hai
- //let categories = document.getElementById("categories").children;
-  
-// for (let el of categories) {
-//   el.addEventListener("click", hello);
-// }
-
-function hello() {
-  searchImages(this.id);
-}
-   
-let search = (e) => {
-  if (e.key === "Enter") {
-    searchImages();
-  }
-};
-
-//document.getElementById("query").addEventListener("keydown", search);
-
-const api = "1f46a7379e934737ab1131d6fbc866f5"
-
-let searchImages = async (q) => {
-  let query = document.getElementById("query").value;
-  if (q) {
-    query = q;
-  }
-  //
-  //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
-  let res = await fetch(
-    `https://newsapi.org/v2/everything?q=${query}&pageSize=50&apiKey=${api}`
-  );
-
-  let data = await res.json();
-
-  console.log(data.articles);
-
-  append(data.articles);
-};
-searchImages(data.res)
-
-let append = (data) => {
-  let container = document.getElementById("search_div");
-  container.innerHTML = null;
-  data.forEach((el) => {
-    
-    let heading = document.createElement("div")
-    heading.setAttribute("class","search_div_grid")
-
-    //let title = document.createElement("div");
-    //title.setAttribute("class","CRYPTO_CORNER_grid")
-
-   // let author = document.createElement("div");
-    //author.setAttribute("class","CRYPTO_CORNER_grid")
-
-   // let image = document.createElement("div");
-   // image.setAttribute("class","CRYPTO_CORNER_grid")
+<script type="module" src="/scripts/search.js"></script>
  
-    
-    let img = document.createElement("img");
-    img.src = el.urlToImage;
-    img.setAttribute("class", "image");
-  
-    let h3 = document.createElement("h3");
-    h3.innerText = el.title;
-    h3.style.textAlign="center"
-    // h3.setAttribute("class","CRYPTO_CORNER_grid")
-
-    let p = document.createElement("p")
-    p.innerText=el.content
-    //description
-    // p.setAttribute("class","CRYPTO_CORNER_grid")
-
-    p.style.textAlign="center"
-    p.style.fontSize="16px"
-
-    let p1 = document.createElement("p")
-    p1.innerText =el.publishedAt
-    p1.style.textAlign="center"
-    p1.setAttribute("class","CRYPTO_CORNER_grid")
-    
-   
-    
-
-    heading.append(img,h3,p,)
-    // title.append(p)
-    // author.append(p1)
-    // image.append(img)
-    //div.append(img,p1,p);
-    container.append( heading);
-  });
-};
-</script>

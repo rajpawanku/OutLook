@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="/style/login.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/hover.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+   <link rel="stylesheet" href="/style/footer.css">
+   <style>
+    #footermaindiv{
+        margin-top: 5%;
+    }
+   </style>
 </head>
 <body>
+    <div id="sbsbemaindiv"></div>
     <div id="container">
         <h2 id="h2"> SIGN IN TO OUTLOOK</h2>
         <input type="text" maxlength="11" id="mobile" placeholder="Mobile Number" />
         <input type="password" id="password" placeholder="Password" />
-        <button onclick="submit()" id="btn">SIGN IN</button>
-        <p id="p">If you are not a subscriber ? <a href="signup.html">Sign Up</a> </p>
+        <button id="btn">SIGN IN</button>
+        <p id="p">If you are not a subscriber ? <a class="aa" href="signup.html">Sign Up</a> </p>
     </div>
+
+    <div id="footermaindiv"></div>
 </body>
 </html>
+<script type="module" src="/scripts/login.js"></script>
