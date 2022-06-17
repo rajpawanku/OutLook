@@ -23,7 +23,7 @@ document.getElementById('btn').addEventListener('click',loginData)
 
     let count=0
     if(singnupData==null){
-        alert('no data available')
+        alert('Firstly Create Your Account')
     }else{
     for(let i=0; i<singnupData.length; i++){
         if(singnupData[i].mobile==mobile && singnupData[i].pass==pass){
