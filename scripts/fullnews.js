@@ -48,7 +48,7 @@ let appendmost = (data) => {
 let cartdata = JSON.parse(localStorage.getItem('coffee'))
 console.log(cartdata)
 
-let container = document.getElementById("news_div")
+//let container = document.getElementById("news_div")
 
 cartdata.map(function(el){
   let container = document.getElementById("news_div")
