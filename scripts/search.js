@@ -20,8 +20,12 @@ f.innerHTML = fooTer()
      
   let search = (e) => {
     if (e.key === "Enter") {
+      // window.location.href="search.html"
+      console.log("pawan");
       searchImages();
+      
     }
+
   };
   
   document.getElementById("query").addEventListener("keydown", search);

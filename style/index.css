@@ -176,3 +176,8 @@ hr{
 .WORLDNEWS h3:hover,.sports h3:hover{
     color: red;
 } 
+
+.CRYPTO_CORNER_grid h3,.CULTURE_AND_SOCIETY,
+.WORLDNEWS h3,.sports h3{
+    cursor: pointer;
+} 

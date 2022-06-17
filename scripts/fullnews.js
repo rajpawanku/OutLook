@@ -51,6 +51,8 @@ console.log(cartdata)
 let container = document.getElementById("news_div")
 
 cartdata.map(function(el){
+  let container = document.getElementById("news_div")
+  container.innerHTML = null;
     let div = document.createElement('div')
 
     let h3 = document.createElement("h1");
