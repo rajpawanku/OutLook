@@ -14,7 +14,7 @@ import {APISEARCH,append} from "../components/api.js"
 
 let url = "https://newsapi.org/v2/everything?q=bitcoin&pageSize=30&apiKey="
 
- let data =await  APISEARCH(url,"c321f987cbcf4c3a82ac11664fd859dd")
+ let data = await APISEARCH(url,"ca5a157cd89d497eaab32cc1d043c715")
 //console.log("data",data);
  let container = document.getElementById("search_div");
  append(data,container)

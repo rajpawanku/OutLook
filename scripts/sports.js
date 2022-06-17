@@ -12,7 +12,7 @@ import {APISEARCH,append} from "../components/api.js"
 
 let url = "https://newsapi.org/v2/everything?q=football&pageSize=30&apiKey="
 
- let data =await  APISEARCH(url,"c321f987cbcf4c3a82ac11664fd859dd")
+ let data =await  APISEARCH(url,"5a82ed90f7224edc97d3591b3499a64b")
 //console.log("data",data);
  let container = document.getElementById("search_div");
  append(data,container)

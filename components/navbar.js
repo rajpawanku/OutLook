@@ -144,7 +144,7 @@ let x =` <div id="navmain">
 
  <!-- 12 -->
  <div class="dropdown1">
-     <button class="dropbtn1"><a href="">HINDI</a></button>
+     <button class="dropbtn1"><a href="hindinews.html">HINDI</a></button>
  </div>
 
  <!-- 13 -->

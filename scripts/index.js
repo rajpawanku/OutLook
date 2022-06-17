@@ -14,7 +14,8 @@ f.innerHTML = fooTer()
 let cartdata = JSON.parse(localStorage.getItem('coffee')) || []
 
 //let oldapi = "1f46a7379e934737ab1131d6fbc866f5"
-let api = "c321f987cbcf4c3a82ac11664fd859dd"
+//let api = "c321f987cbcf4c3a82ac11664fd859dd"
+let api = "786b682cf6ae49cd9c9c187144746ef6"
 let bitcoinsearch = async () => {
   //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
   let res = await fetch(
@@ -159,10 +160,11 @@ let appendworld = (data) => {
 };
 
 // Sports
+let api3 = "5a82ed90f7224edc97d3591b3499a64b"
 let sportsearch = async () => {
   //https://newsapi.org/v2/top-headlines?country=${query}&apiKey=
   let res = await fetch(
-    `https://newsapi.org/v2/everything?q=cricket&pageSize=8&apiKey=${api}`
+    `https://newsapi.org/v2/everything?q=cricket&pageSize=8&apiKey=${api3}`
   );
   
   let data = await res.json();
